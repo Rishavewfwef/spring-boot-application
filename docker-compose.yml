@@ -17,8 +17,8 @@ services:
       - SYS_NICE
     restart: always
     environment:
-      - MYSQL_DATABASE=springtest17052023
-      - MYSQL_ROOT_PASSWORD=Password123#
+      - MYSQL_DATABASE=DB_Name
+      - MYSQL_ROOT_PASSWORD=
     ports:
       - "33060:33060"
       - "3306:3306"
