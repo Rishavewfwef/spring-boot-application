@@ -1,4 +1,5 @@
 APP_NAME = test-app-java-spring
+#APP_NAME = app.jar
 
 local_deploy: build docker_build docker_compose_up
 

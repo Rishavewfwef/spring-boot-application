@@ -1,9 +1,10 @@
 version: '3.8'
 services:
   test-app-java-spring:
-    container_name: test-app-java-spring
+    #container_name: test-app-java-spring
     build:
-      context: test-app-java-spring
+      #context: test-app-java-spring
+      context: .
       dockerfile: Dockerfile
     image: test-app-java-spring:latest
     ports:
