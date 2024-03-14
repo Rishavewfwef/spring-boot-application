@@ -28,6 +28,17 @@ pipeline {
         
          }
 
+        stage('Quality gate status'){
+             steps {
+                 script{
+                    waitforQualityGate abortPipeline: false, credentialsId: 'Sonar-API'
+                 }
+             }
+         }
+
+
+
+
      stage('Build docker image')  {
         steps {
             sh 'docker build -t anjalishreya1/ciautomationimage:latest .'
